@@ -1,0 +1,178 @@
+[
+    {
+        "id": "86bb36c84cac736e",
+        "type": "tab",
+        "label": "Fluxo 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "302edc7d196ee053",
+        "type": "mqtt in",
+        "z": "86bb36c84cac736e",
+        "name": "",
+        "topic": "coldconnect/sensores",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "0c00431fc58ae8e1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 300,
+        "wires": [
+            [
+                "22794a260d241021",
+                "87bdad2c255c89c6"
+            ]
+        ]
+    },
+    {
+        "id": "22794a260d241021",
+        "type": "function",
+        "z": "86bb36c84cac736e",
+        "name": "Extrai Temperatura",
+        "func": "msg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 260,
+        "wires": [
+            [
+                "fa4123bff9fee5f1"
+            ]
+        ]
+    },
+    {
+        "id": "87bdad2c255c89c6",
+        "type": "function",
+        "z": "86bb36c84cac736e",
+        "name": "Extrai Umidade",
+        "func": "msg.payload = msg.payload.umidade;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 340,
+        "wires": [
+            [
+                "2d493e3d8cf41794"
+            ]
+        ]
+    },
+    {
+        "id": "fa4123bff9fee5f1",
+        "type": "ui_gauge",
+        "z": "86bb36c84cac736e",
+        "name": "Temperatura",
+        "group": "28210d108176d681",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 50,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 800,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "2d493e3d8cf41794",
+        "type": "ui_gauge",
+        "z": "86bb36c84cac736e",
+        "name": "Umidade",
+        "group": "28210d108176d681",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Umidade",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 800,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "0c00431fc58ae8e1",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "28210d108176d681",
+        "type": "ui_group",
+        "name": "Sensor",
+        "tab": "44f4fcbf5d9bfcdd",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "44f4fcbf5d9bfcdd",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
