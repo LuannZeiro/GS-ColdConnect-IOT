@@ -1,11 +1,13 @@
 # 🌡️ ColdConnect - Solução IoT Integrada
 # 👥 Integrantes: Henzo Puchetti - RM555179 / Luann Mariano - RM558548
-📑 Descrição
+
+
+# 📑 Descrição
 Este projeto foi desenvolvido como parte do desafio da disciplina Disruptive Architectures: IoT, IoB & Generative IA. A proposta consiste em integrar sensores e atuadores com um sistema IoT para coleta, processamento e exibição de dados em tempo real, utilizando protocolos e plataformas adequadas.
 
 
 
-⚙️ Tecnologias Utilizadas
+# ⚙️ Tecnologias Utilizadas
 ESP32 — Microcontrolador para coleta de dados.
 
 Sensor DHT22 — Para medição de temperatura e umidade.
@@ -22,7 +24,7 @@ Dashboard Node-RED — Monitoramento visual dos dados.
 
 
 
-🖥️ Funcionalidades
+# 🖥️ Funcionalidades
 ✅ Coleta de temperatura e umidade pelo sensor DHT22.
 ✅ Envio dos dados em formato JSON para o broker MQTT.
 ✅ Acionamento de um LED no pino 5 quando a temperatura for menor ou igual a -16°C.
@@ -31,7 +33,7 @@ Dashboard Node-RED — Monitoramento visual dos dados.
 
 
 
-📡 Descrição do Funcionamento
+# 📡 Descrição do Funcionamento
 O ESP32 coleta a temperatura e umidade a cada 5 segundos.
 
 Os dados são enviados via MQTT no tópico:
@@ -43,7 +45,7 @@ O LED é acionado automaticamente como um sistema de alerta para temperaturas ex
 
 
 
-🚀 Como Executar
+# 🚀 Como Executar
 1. Configurar o ESP32
 Faça upload do código para o ESP32.
 
@@ -61,7 +63,7 @@ Teste a condição de acionamento do LED.
 
 
 
-🏆 Requisitos Atendidos
+# 🏆 Requisitos Atendidos
 ✅ Sistema IoT com sensor e atuador.
 ✅ Hardware: ESP32 com sensor DHT22 e LED.
 ✅ Dashboard para monitoramento em tempo real.
