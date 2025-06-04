@@ -72,9 +72,9 @@ void loop() {
   }
 
   if (temperatura <= -16) {
-    digitalWrite(LEDPIN, HIGH);  // Liga o LED
+    digitalWrite(LEDPIN, HIGH);
   } else {
-    digitalWrite(LEDPIN, LOW);   // Desliga o LED
+    digitalWrite(LEDPIN, LOW);
   }
 
   String payload = "{\"temperatura\": " + String(temperatura) + ", \"umidade\": " + String(umidade) + "}";
