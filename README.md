@@ -1,6 +1,5 @@
 # 🌡️ ColdConnect - Solução IoT Integrada
-# 👥 Integrantes
-# Henzo Puchetti - RM555179 / Luann Mariano - rm558548
+# 👥 Integrantes: Henzo Puchetti - RM555179 / Luann Mariano - RM558548
 📑 Descrição
 Este projeto foi desenvolvido como parte do desafio da disciplina Disruptive Architectures: IoT, IoB & Generative IA. A proposta consiste em integrar sensores e atuadores com um sistema IoT para coleta, processamento e exibição de dados em tempo real, utilizando protocolos e plataformas adequadas.
 
