@@ -1,5 +1,5 @@
 # 🌡️ ColdConnect - Solução IoT Integrada
-# 👥 Integrantes: Henzo Puchetti - RM555179 / Luann Mariano - RM558548
+## 👥 Integrantes: Henzo Puchetti - RM555179 / Luann Mariano - RM558548
 
 
 # 📑 Descrição
